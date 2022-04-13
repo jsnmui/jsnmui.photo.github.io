@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <nav>  
+        <a href="../index.html">Home</a>
+        <a href="../pages/portfolio.html">Portfolio</a></li>
+        <a href="about.html">About Me</a></li>
+      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript">
+        function hide() {
+          document.getElementById("form1").style.display="none";
+        }
+
+        function show() {
+          document.getElementById("form1").style.display="block";
+          window.scrollTo(0,document.body.scrollHeight);
+        }
+  </script>   
+</head>
+<body>
+    <h2>
+        About Me
+    </h2>
+    <p>I'm a photographer based in New York City who specializes in photographing architecture.</p>
+    <P>Clients Include:</P>
+    <ul>
+        <li>Tesla Motors</li>
+        <li>FedEx</li>
+        <li>Discovery Networks</li>
+    </ul>
+
+    <div>
+        <p>If you have any questions or suggestions, you can complete the form below.</p>
+         <button onclick="hide()">Hide</button>
+         <button onclick="show()">Show</button>
+        
+        <form id="form1">
+               First name: <br>
+               <input type = "text" name = "first_name" />
+               <br>
+               Last name:<br>
+               <input type = "text" name = "last_name" />
+               <br>
+               E-mail: <br>
+               <input type = "text" name = "email" />
+               <br>
+               <input type = "radio" name = "gender" value = "male"> Male
+               <input type = "radio" name = "gender" value = "female"> Female
+               <br>
+               Comments: <br>
+               <textarea rows = "5" cols = "50" name = "comments">
+                  Enter comments  here...
+               </textarea><br>
+               <input type = "button" name = "submit" value = "submit" />
+        </form>
+        
+      </div>
+</body>
