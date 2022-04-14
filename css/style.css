@@ -80,3 +80,25 @@ nav {
       text-align: center;
   }
 
+  footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  footer div {
+    text-decoration: none;
+    text-align: center;
+     
+    colo:r: #464141;
+    padding:20px;
+    margin: 0px;
+    font-family: sans-serif;
+  }
+
+  footer img{
+      width: 30px;
+      height: 30px;
+      padding: 15px;
+
+  }
