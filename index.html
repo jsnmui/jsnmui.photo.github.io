@@ -7,8 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photographer's Company</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+        var slideIndex = 1;
+        
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+
+        showDivs(slideIndex);
+     </script>
 </head>
-<body>
+<body onload="showDivs(1)">
     <header>
         <nav>
             <a href="index.html">Home</a>
@@ -19,7 +40,13 @@
     <h1 class="center">Welcome to My Photography Website</h1>
     <p class="center">Here you can find information about my interests in photography.</p>
     <div > 
-        <img id="main" src="https://images.squarespace-cdn.com/content/v1/5adb89f2aa49a19e7960b934/1557071838696-Y3IB7LW969A5MW22NOLD/mike-kelley-airportraits-frankfurt.jpg?format=1000w"/<img>
+        <img class="mySlides"  src="https://images.squarespace-cdn.com/content/v1/5adb89f2aa49a19e7960b934/1557071838696-Y3IB7LW969A5MW22NOLD/mike-kelley-airportraits-frankfurt.jpg"/>
+        <img class="mySlides" src="https://www.thespruce.com/thmb/YddABPjyLm7XqfT0TxyRiaDDftU=/3024x2268/smart/filters:no_upscale()/pixasquare-4ojhpgKpS68-unsplash-ca4afd459306430ab50c2cc32ce2715d.jpg"/>
+        <img class="mySlides" src="https://images.squarespace-cdn.com/content/v1/5adb89f2aa49a19e7960b934/1571241022594-QD255XM1V9V2GQH5ZS18/carla-ridge-mike-kelley-walker-workshop-12.jpg"/> 
+        <div class="buttcontainer">
+        <button  onclick="plusDivs(-1)">&#10094;</button>
+        <button  onclick="plusDivs(1)">&#10095;</button>
+         </div>  
     </div>
 
 <footer>

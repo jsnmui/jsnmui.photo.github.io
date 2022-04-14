@@ -14,11 +14,7 @@ p {
     
 }
 
-#main {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-} 
+
 
 .grid-container {
     display: grid;
@@ -88,9 +84,8 @@ nav {
 
   footer div {
     text-decoration: none;
-    text-align: center;
-     
-    colo:r: #464141;
+    text-align: center; 
+    color: #464141;
     padding:20px;
     margin: 0px;
     font-family: sans-serif;
@@ -102,3 +97,23 @@ nav {
       padding: 15px;
 
   }
+
+  .mySlides {
+     display:none;
+      margin-left: auto;
+      margin-right: auto;
+      width:60%;
+      height: 400px;
+    }
+
+  .buttcontainer{
+      display: flex;
+      justify-content: center ;
+  }
+
+
+  .buttcontainer button{
+    padding: 10px;
+    margin: 10px;
+}
+
